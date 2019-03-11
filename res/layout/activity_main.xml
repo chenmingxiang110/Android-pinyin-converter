@@ -1,0 +1,114 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="15dp"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_box_shape"
+            android:padding="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="false"
+                android:backgroundTint="#FAFAFA"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp"
+                android:scrollbars = "vertical"
+                android:id="@+id/pinyin_box"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_transform"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="center"
+            android:id="@+id/transform_btn"
+            android:onClick="transformPinyin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_box_shape"
+            android:padding="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="false"
+                android:backgroundTint="#FAFAFA"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp"
+                android:scrollbars = "vertical"
+                android:id="@+id/word_box"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_mic"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="center"
+            android:id="@+id/record_btn"/>
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_play_arrow"
+            android:background="@drawable/button_shape"
+            android:layout_gravity="center"
+            android:id="@+id/play_btn"/>
+
+    </LinearLayout>
+
+</LinearLayout>
